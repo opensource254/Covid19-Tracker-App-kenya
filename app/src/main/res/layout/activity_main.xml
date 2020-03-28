@@ -82,6 +82,27 @@
         android:layout_centerInParent="true"
         android:scaleType="fitXY"/>
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="FEVER . HEADACHE . DRY COUGH . FATIQUE . MUSCLE PAIN . SHORTNESS OF BREATH"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
