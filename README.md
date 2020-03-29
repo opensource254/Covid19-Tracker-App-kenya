@@ -12,3 +12,7 @@ Check out on how to submit your  [contributions](../master/CONTRIBUTING.md) to t
 [world meters  ](https://https://www.worldometers.info/coronavirus/)
 
 [CSSEGISandData  ](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data)
+
+# Licence
+[MIT](../master/LICENSE)
+
