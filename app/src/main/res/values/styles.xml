@@ -11,7 +11,12 @@
 
     </style>
 
+<!-- cardview style -->
+    <style name="CustomCardView" parent="CardView.Light">
+        <item name="cardCornerRadius">4dp</item>
+        <item name="cardElevation">4dp</item>
 
+    </style>
 
 
     <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
