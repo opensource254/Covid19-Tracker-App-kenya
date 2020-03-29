@@ -94,7 +94,7 @@
         android:paddingEnd="20dp"
         android:scrollHorizontally="true"
         android:singleLine="true"
-        android:text="FEVER . HEADACHE . DRY COUGH . FATIQUE . MUSCLE PAIN . SHORTNESS OF BREATH"
+        android:text="@string/common_symptoms"
         android:textSize="15dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
