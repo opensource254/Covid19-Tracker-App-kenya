@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Covid_19 kenya</string>
+    <string name="title_home">Rudi</string>
+    <string name="title_Stats">Takwimu</string>
+    <string name="title_News">Habari</string>
+</resources>
