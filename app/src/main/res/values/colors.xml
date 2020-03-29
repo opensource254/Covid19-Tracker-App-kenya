@@ -3,4 +3,18 @@
     <color name="colorPrimary">#263238</color>
     <color name="colorPrimaryDark">#2E3C43</color>
     <color name="colorAccent">#FFF</color>
+
+    <color name="colorCases">#F4511E</color>
+    <color name="colorCasesToday">#A9492A</color>
+    <color name="colorRecovered">#283593</color>
+    <color name="colorDeaths">#D60F0F</color>
+    <color name="colorDeathsToday">#9C2133</color>
+    <color name="colorActive">#43A047</color>
+    <color name="colorCritical">#75311C</color>
+
+
+
+
+
+
 </resources>
