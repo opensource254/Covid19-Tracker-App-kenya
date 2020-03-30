@@ -43,10 +43,11 @@
                 android:text="cases" />
 
             <TextView
+                android:id="@+id/txt_cases"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="42" />
+                android:text="0" />
 
 
         </LinearLayout>
@@ -79,10 +80,11 @@
                 android:text="Recovered" />
 
             <TextView
+                android:id="@+id/txt_recovered"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="42" />
+                android:text="0" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -111,10 +113,11 @@
                 android:text="Deaths" />
 
             <TextView
+                android:id="@+id/txt_deaths"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="42" />
+                android:text="0" />
         </LinearLayout>
 
 
@@ -147,10 +150,11 @@
                 android:text="Deaths" />
 
             <TextView
+                android:id="@+id/txt_today_deaths"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="42" />
+                android:text="0" />
         </LinearLayout>
 
 
@@ -184,10 +188,11 @@
                 android:text="Cases" />
 
             <TextView
+                android:id="@+id/txt_today_cases"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="42" />
+                android:text="0" />
         </LinearLayout>
 
 
@@ -217,10 +222,11 @@
                 android:text="Critical" />
 
             <TextView
+                android:id="@+id/txt_critical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="42" />
+                android:text="0" />
         </LinearLayout>
 
 
@@ -250,10 +256,11 @@
                 android:text="Active" />
 
             <TextView
+                android:id="@+id/txt_active"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="42" />
+                android:text="0" />
         </LinearLayout>
 
 
