@@ -6,8 +6,13 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     tools:context=".StatsActivity">
-
-
+  <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+      android:id="@+id/statsrefresh"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -284,5 +289,6 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView6"
         app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/bottom_nav_menu" />
-
+</androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,7 @@
 package app.azim.techxnoss.covid_19_kenya;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -49,12 +50,20 @@ public class StatsActivity extends AppCompatActivity {
 
 
         //progress dialog
-        pDialog = new ProgressDialog(this);
-        pDialog.setMessage("loading...");
-        pDialog.setCancelable(false);
+       // pDialog = new ProgressDialog(this);
+       // pDialog.setMessage("loading...");
+       // pDialog.setCancelable(false);
 
         //parsing json data
         parseJSON();
+
+
+        //adding swipe to refresh
+       final SwipeRefreshLayout pullToRefresh = findViewById(R.id.statsrefresh);
+        pullToRefresh.setOnRefreshListener(() -> {
+            parseJSON();
+            pullToRefresh.setRefreshing(false);
+        });
 
 
        //bottom navigation
@@ -89,7 +98,7 @@ public class StatsActivity extends AppCompatActivity {
      */
     private void parseJSON() {
 
-        showpDialog();
+       // showpDialog();
 
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET,
                 urlJsonObj, null, new Response.Listener<JSONObject>() {
@@ -125,7 +134,7 @@ public class StatsActivity extends AppCompatActivity {
                             "Error: " + e.getMessage(),
                             Toast.LENGTH_LONG).show();
                 }
-                hidepDialog();
+               // hidepDialog();
             }
         }, new Response.ErrorListener() {
 
@@ -135,7 +144,7 @@ public class StatsActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),
                         error.getMessage(), Toast.LENGTH_SHORT).show();
                 // hide the progress dialog
-                hidepDialog();
+               // hidepDialog();
             }
         });
 

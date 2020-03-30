@@ -46,4 +46,8 @@ dependencies {
 
     // Volley library
     implementation 'com.android.volley:volley:1.1.0'
+
+    //swipe refresh layout
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+
 }
