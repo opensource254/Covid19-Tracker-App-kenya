@@ -1,6 +1,10 @@
 # Covid19-Tracker-App-kenya
 App to track covid-19 virus in kenya using corona-api
 
+## Running the APK
+Download  [Android Studio  ](https://developer.android.com/studio) compile the code and install it OR doenload the generated debug apk [here](https://github.com/Opensource-254/Covid19-Tracker-App-kenya/raw/master/covid19debug.apk)
+
+
 ## Contributing
 Check out on how to submit your  [contributions](../master/CONTRIBUTING.md) to the project
 
