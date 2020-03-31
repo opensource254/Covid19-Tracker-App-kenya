@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.firebase.firebase-perf'
 
 android {
     compileSdkVersion 29
@@ -49,5 +51,15 @@ dependencies {
 
     //swipe refresh layout
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+
+    //firebase SDK
+    implementation 'com.google.firebase:firebase-core:17.3.0'
+
+    // Add the Firebase SDK for Crashlytics.
+    implementation 'com.google.firebase:firebase-crashlytics:17.0.0-beta03'
+
+    // Add the Firebase perfomance
+    implementation 'com.google.firebase:firebase-perf:19.0.5'
+
 
 }
