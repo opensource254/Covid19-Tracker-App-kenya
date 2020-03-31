@@ -8,7 +8,7 @@ Check out on how to submit your  [contributions](../master/CONTRIBUTING.md) to t
 ## Screenshots
 <img src="https://github.com/Opensource-254/Covid19-Tracker-App-kenya/blob/master/screenshots/screen1.jpeg" width="250"/> <img
  src="https://github.com/Opensource-254/Covid19-Tracker-App-kenya/blob/master/screenshots/screen2.jpeg" width="250"/> <img
- src="https://github.com/Opensource-254/Covid19-Tracker-App-kenya/blob/master/screenshots/screen3.jpeg" width="250"/><img
+ src="https://github.com/Opensource-254/Covid19-Tracker-App-kenya/blob/master/screenshots/screen4.jpeg" width="250"/><img
  src="https://github.com/Opensource-254/Covid19-Tracker-App-kenya/blob/master/screenshots/screen5.jpeg" width="250"/>
 
 
