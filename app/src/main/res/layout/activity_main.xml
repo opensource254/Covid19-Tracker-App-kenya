@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="?android:attr/windowBackground"
-        app:backgroundTint="@color/colorPrimary"
+        app:backgroundTint="@color/colorPrimaryDark"
         app:elevation="0dp"
         app:itemIconTint="#fff"
         app:itemTextColor="#fff"
