@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="?attr/colorPrimary"
     tools:context=".StatsActivity">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -282,10 +282,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:background="?android:attr/windowBackground"
-                app:backgroundTint="@color/colorPrimaryDark"
-                app:elevation="0dp"
-                app:itemIconTint="#fff"
-                app:itemTextColor="#fff"
+                app:backgroundTint="?attr/colorPrimary"
+                app:elevation="5dp"
+                app:cardUseCompatPadding="true"
+                app:itemIconTint="?attr/colorPrimaryDark"
+                app:itemTextColor="?attr/colorPrimaryDark"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintLeft_toLeftOf="parent"

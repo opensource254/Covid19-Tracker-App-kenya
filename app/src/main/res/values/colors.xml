@@ -4,6 +4,10 @@
     <color name="colorPrimaryDark">#2E3C43</color>
     <color name="colorAccent">#FFF</color>
 
+    <color name="colorPrimaryDay">#FDFEFF</color>
+    <color name="colorPrimaryDarkDay">#A7ACAE</color>
+    <color name="colorAccentDay">#C73A0F</color>
+
     <color name="colorCases">#F4511E</color>
     <color name="colorCasesToday">#A9492A</color>
     <color name="colorRecovered">#283593</color>

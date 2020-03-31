@@ -85,7 +85,7 @@ public class StatsActivity extends AppCompatActivity {
 
 
                 return true;
-            case R.id.navigation_news:
+            case R.id.navigation_settings:
 
         }
         return false;

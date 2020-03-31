@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="?attr/colorPrimary"
     tools:context=".PrecautionsActivity">
 
     <androidx.core.widget.NestedScrollView
@@ -32,7 +32,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardBackgroundColor="?attr/colorPrimary"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -43,14 +43,14 @@
                     android:paddingBottom="12dp">
 
 
-                    <androidx.cardview.widget.CardView
+                    <com.google.android.material.card.MaterialCardView
                         android:id="@+id/view"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="10dp"
                         android:elevation="12dp"
-                        app:cardBackgroundColor="@color/colorPrimary"
+                        app:cardBackgroundColor="?attr/colorPrimary"
                         app:cardCornerRadius="25dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -63,7 +63,7 @@
                             android:scaleType="centerCrop"
                             android:src="@drawable/coronavirus" />
 
-                    </androidx.cardview.widget.CardView>
+                    </com.google.android.material.card.MaterialCardView>
 
                     <TextView
                         android:id="@+id/desc"
@@ -72,7 +72,7 @@
                         android:layout_marginStart="60dp"
                         android:layout_marginTop="24dp"
                         android:text="SIGNS AND SYMPTOMS"
-                        android:textColor="@color/colorAccent"
+                        android:textColor="?attr/colorPrimaryDark"
                         app:layout_constraintEnd_toStartOf="@+id/arrowBtn"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toEndOf="@+id/view"
@@ -115,7 +115,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="32dp"
                             android:text="High Body Temperature"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="?attr/colorPrimaryDark"
                             app:layout_constraintBottom_toTopOf="@+id/mailIcon"
                             app:layout_constraintStart_toEndOf="@id/phoneIcon"
                             app:layout_constraintTop_toTopOf="@+id/phoneIcon" />
@@ -138,7 +138,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="32dp"
                             android:text="Coughing and Sneezing"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="?attr/colorPrimaryDark"
                             app:layout_constraintStart_toEndOf="@id/mailIcon"
                             app:layout_constraintTop_toTopOf="@+id/mailIcon" />
 
@@ -160,7 +160,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="32dp"
                             android:text="Sore Throat"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="?attr/colorPrimaryDark"
                             app:layout_constraintStart_toEndOf="@id/soar_throat_icon"
                             app:layout_constraintTop_toTopOf="@+id/soar_throat_icon" />
 
@@ -181,7 +181,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="32dp"
                             android:text="Headache"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="?attr/colorPrimaryDark"
                             app:layout_constraintStart_toEndOf="@id/headache_icon"
                             app:layout_constraintTop_toTopOf="@+id/headache_icon" />
 
@@ -202,7 +202,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="32dp"
                             android:text="Difficulty in Breathing"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="?attr/colorPrimaryDark"
                             app:layout_constraintStart_toEndOf="@id/breathing_icon"
                             app:layout_constraintTop_toTopOf="@+id/breathing_icon" />
 
@@ -222,7 +222,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="8dp"
-                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardBackgroundColor="?attr/colorPrimary"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/cardView1"
                 app:layout_constraintTop_toBottomOf="@+id/cardView">
@@ -246,7 +246,7 @@
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="10dp"
                         android:elevation="12dp"
-                        app:cardBackgroundColor="@color/colorPrimary"
+                        app:cardBackgroundColor="?attr/colorPrimary"
                         app:cardCornerRadius="25dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -268,7 +268,7 @@
                         android:layout_marginStart="60dp"
                         android:layout_marginTop="24dp"
                         android:text="HOW ITS SPREAD"
-                        android:textColor="@color/colorAccent"
+                        android:textColor="?attr/colorPrimaryDark"
                         app:layout_constraintEnd_toStartOf="@+id/arrowBtn1"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toEndOf="@+id/view1"
@@ -305,7 +305,7 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <TextView
+                        <com.google.android.material.textview.MaterialTextView
                             android:id="@+id/phoneNumber1"
                             style="@style/TextAppearance.AppCompat.Medium"
                             android:layout_width="wrap_content"
@@ -316,7 +316,7 @@
                     or sneezes These droplets can land in the
                     mouth or noses of people who are nearby or
                     possibly inhaled into lungs"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="?attr/colorPrimaryDark"
                             app:layout_constraintStart_toEndOf="@id/phoneIcon1"
                             app:layout_constraintTop_toTopOf="@+id/phoneIcon1" />
 
@@ -340,7 +340,7 @@
                     infected person approximately withing 2 metres 0 6 feet or 2-3 steps.This can be
                     through hugging,kissing,hand shaking
                     or standing close."
-                            android:textColor="@color/colorAccent"
+                            android:textColor="?attr/colorPrimaryDark"
                             app:layout_constraintStart_toEndOf="@id/personcontact_icon"
                             app:layout_constraintTop_toTopOf="@+id/personcontact_icon" />
 
@@ -361,7 +361,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="22dp"
                             android:text="By touching objects and surfaces contaminated by Coronavirus and then touching the mouth , nose or eyes."
-                            android:textColor="@color/colorAccent"
+                            android:textColor="?attr/colorPrimaryDark"
                             app:layout_constraintStart_toEndOf="@id/touching_icon"
                             app:layout_constraintTop_toTopOf="@+id/touching_icon" />
 
@@ -379,7 +379,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="10dp"
-                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardBackgroundColor="?attr/colorPrimary"
                 app:layout_constraintTop_toBottomOf="@+id/cardView1">
 
 
@@ -526,7 +526,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardBackgroundColor="?attr/colorPrimary"
                 app:layout_constraintTop_toBottomOf="@+id/cardView3">
 
 

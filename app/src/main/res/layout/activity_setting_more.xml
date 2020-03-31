@@ -1,6 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+ <com.google.android.material.circularreveal.CircularRevealLinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:paddingLeft="10dp"
+     android:paddingRight="10dp"
+     android:paddingTop="10dp">
+
+
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="5dp">
+
+         <androidx.appcompat.widget.AppCompatImageView
+             android:id="@+id/appCompatImageView"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:layout_marginStart="24dp"
+             android:src="@mipmap/laucher"
+             android:tint="?attr/colorPrimaryDark"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintVertical_bias="0.067">
+
+         </androidx.appcompat.widget.AppCompatImageView>
+
+         <com.google.android.material.textview.MaterialTextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="covid-19-kenya"
+             android:textSize="20sp"
+             android:fontFamily="@font/aclonica"
+             app:layout_constraintBottom_toTopOf="@+id/materialTextView"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.077"
+             app:layout_constraintStart_toEndOf="@+id/appCompatImageView"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintVertical_bias="0.666" />
+
+         <com.google.android.material.textview.MaterialTextView
+             android:id="@+id/materialTextView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="4dp"
+             android:text="version"
+             android:fontFamily="@font/aclonica"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.059"
+             app:layout_constraintStart_toEndOf="@+id/appCompatImageView" />
+
+
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:layout_marginTop="10dp"
+         android:background="#D6CFCF" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:paddingTop="5dp">
+
+
+         <TextView
+             android:drawableLeft="@drawable/ic_email_black_24dp"
+             android:drawablePadding="5dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingStart="40dp"
+             android:paddingTop="20dp"
+             android:text="Send Feedback" />
+
+         <TextView
+             android:drawableLeft="@drawable/ic_info_black_24dp"
+             android:drawablePadding="5dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingStart="40dp"
+             android:paddingTop="25dp"
+             android:paddingBottom="20dp"
+             android:text="About Opensource254" />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:layout_marginTop="10dp"
+             android:background="#D6CFCF" />
+         <TextView
+             android:paddingStart="40dp"
+             android:paddingTop="20dp"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:text="Enable Day Mode"/>
+         <com.google.android.material.switchmaterial.SwitchMaterial
+             android:id="@+id/theme_switch"
+             android:paddingStart="40dp"
+             android:paddingEnd="40dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/day_mode"
+             android:textColor="?attr/colorPrimaryDark"
+             />
+
+
+
+     </LinearLayout>
+
+
+ </com.google.android.material.circularreveal.CircularRevealLinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

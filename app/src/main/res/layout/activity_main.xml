@@ -5,10 +5,10 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="?attr/colorPrimary"
     android:paddingTop="?attr/actionBarSize">
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/Btn_Helpline"
         style="@style/ShapeAppearance.App.SmallComponent"
         android:layout_width="match_parent"
@@ -23,13 +23,13 @@
         android:padding="10dp"
         android:stateListAnimator="@null"
         android:text="Helpline"
-        android:textColor="@color/colorAccent"
+        android:textColor="?attr/colorPrimaryDark"
         android:translationZ="2dp"
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/Btn_Precautions"
         style="@style/ShapeAppearance.App.SmallComponent"
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
         android:padding="10dp"
         android:stateListAnimator="@null"
         android:text="Precautions"
-        android:textColor="@color/colorAccent"
+        android:textColor="?attr/colorPrimaryDark"
         android:translationZ="2dp"
         app:layout_constraintBottom_toTopOf="@+id/Btn_Helpline"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,10 +57,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="?android:attr/windowBackground"
-        app:backgroundTint="@color/colorPrimaryDark"
+        app:backgroundTint="?attr/colorPrimary"
         app:elevation="0dp"
-        app:itemIconTint="#fff"
-        app:itemTextColor="#fff"
+        app:itemIconTint="?attr/colorPrimaryDark"
+        app:itemTextColor="?attr/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"

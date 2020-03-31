@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.LightTheme);
         setContentView(R.layout.activity_main);
 
         BottomNavigationView navigation = findViewById(R.id.nav_view);
@@ -70,7 +71,9 @@ public class MainActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.slide_up, R.anim.no_animation);
 
                 return true;
-            case R.id.navigation_news:
+            case R.id.navigation_settings:
+                startActivity(new Intent(MainActivity.this, SettingMoreActivity.class));
+                overridePendingTransition(R.anim.slide_up, R.anim.no_animation);
 
         }
         return false;

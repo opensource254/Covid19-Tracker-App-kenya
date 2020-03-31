@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="app.azim.techxnoss.covid_19_kenya">
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name=".VolleyController"
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/laucher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:name="app.azim.techxnoss.covid_19_kenya.VolleyController"
+        android:theme="@style/LightTheme">
+        <activity android:name=".SettingMoreActivity"></activity>
+        <activity android:name=".SettingsActivity" />
 
-        >
         <meta-data
             android:name="firebase_performance_logcat_enabled"
             android:value="true" />
