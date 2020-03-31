@@ -18,9 +18,11 @@ public class VolleyController extends Application {
         super.onCreate();
         mInstance = this;
     }
+
     public static synchronized VolleyController getInstance() {
         return mInstance;
     }
+
     public RequestQueue getRequestQueue() {
         if (mRequestQueue == null) {
             mRequestQueue = Volley.newRequestQueue(getApplicationContext());
@@ -28,10 +30,12 @@ public class VolleyController extends Application {
 
         return mRequestQueue;
     }
+
     public <T> void addToRequestQueue(Request<T> req, String tag) {
         req.setTag(TextUtils.isEmpty(tag) ? TAG : tag);
         getRequestQueue().add(req);
     }
+
     public <T> void addToRequestQueue(Request<T> req) {
         req.setTag(TAG);
         getRequestQueue().add(req);

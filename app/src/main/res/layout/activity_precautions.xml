@@ -376,10 +376,10 @@
                 android:id="@+id/cardView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardBackgroundColor="@color/colorPrimary"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="10dp"
+                app:cardBackgroundColor="@color/colorPrimary"
                 app:layout_constraintTop_toBottomOf="@+id/cardView1">
 
 
@@ -391,104 +391,109 @@
 
 
                     <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/tap" />
-
-                    <TextView
-                        android:padding="5dp"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:text="Wash your hands regulary with soap and running water or boiled cooled water" />
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/tap" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="Wash your hands regulary with soap and running water or boiled cooled water" />
 
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
+
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:padding="5dp"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:padding="5dp"
                             android:src="@drawable/sanitizer" />
 
                         <TextView
-                            android:padding="5dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
+                            android:padding="5dp"
                             android:text="using an alcohol-based hand sanitizer" />
 
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
+
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:padding="5dp"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:padding="5dp"
                             android:src="@drawable/sneeze" />
 
                         <TextView
-                            android:padding="5dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
+                            android:padding="5dp"
                             android:text="cough or sneez into a diposable tissue or bent elbow, and wash hands immediately. Dispose the tissue in a trash or burn it" />
 
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
+
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:padding="5dp"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:padding="5dp"
                             android:src="@drawable/shake" />
 
                         <TextView
-                            android:padding="5dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
+                            android:padding="5dp"
                             android:text="Avoid shaking hands , hugging or kissing with people with flu-like symptoms" />
 
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
+
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:padding="5dp"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
+                            android:padding="5dp"
                             android:src="@drawable/stayhome" />
 
                         <TextView
-                            android:padding="5dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
+                            android:padding="5dp"
                             android:text="Person with a cough or sneezing should stay home or keep a social distance and avoid mixing with othe crowds" />
 
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
+
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -500,10 +505,10 @@
                             android:src="@drawable/protect" />
 
                         <TextView
-                            android:padding="5dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
+                            android:padding="5dp"
                             android:text="maintain good respiratory hygiene by covering your mouth and nose while coughing and sneezing with a handkerchief, tissue. or into flexed elbow" />
 
 
@@ -512,17 +517,15 @@
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-
-
-
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
                 app:cardBackgroundColor="@color/colorPrimaryDark"
                 app:layout_constraintTop_toBottomOf="@+id/cardView3">
 
@@ -531,8 +534,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="5dp"
-                    >
+                    android:padding="5dp">
 
 
                     <androidx.appcompat.widget.LinearLayoutCompat
@@ -554,12 +556,14 @@
                             android:layout_gravity="center_vertical"
                             android:padding="5dp"
                             android:text=". Self quarantine is an act of individuals who may have been exposed to COVID-19 separating themselves for 14 days to monitor if the develope symptoms." />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:padding="5dp"
                             android:text="WHO SHOULD SELF QUARANTINE ?" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

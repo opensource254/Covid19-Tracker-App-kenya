@@ -12,9 +12,9 @@ import android.widget.Button;
 
 public class PrecautionsActivity extends AppCompatActivity {
 
-    ConstraintLayout expandableView , expandableView1 ;
-    Button arrowBtn , arrowBtn1 ;
-    CardView cardView, cardView1 ;
+    ConstraintLayout expandableView, expandableView1;
+    Button arrowBtn, arrowBtn1;
+    CardView cardView, cardView1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class PrecautionsActivity extends AppCompatActivity {
         arrowBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (expandableView.getVisibility()==View.GONE){
+                if (expandableView.getVisibility() == View.GONE) {
                     TransitionManager.beginDelayedTransition(cardView, new AutoTransition());
                     expandableView.setVisibility(View.VISIBLE);
                     arrowBtn.setBackgroundResource(R.drawable.ic_keyboard_arrow_up_black_24dp);
@@ -47,7 +47,7 @@ public class PrecautionsActivity extends AppCompatActivity {
         arrowBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (expandableView1.getVisibility()==View.GONE){
+                if (expandableView1.getVisibility() == View.GONE) {
                     TransitionManager.beginDelayedTransition(cardView1, new AutoTransition());
                     expandableView1.setVisibility(View.VISIBLE);
                     arrowBtn1.setBackgroundResource(R.drawable.ic_keyboard_arrow_up_black_24dp);
@@ -58,9 +58,6 @@ public class PrecautionsActivity extends AppCompatActivity {
                 }
             }
         });
-
-
-
 
 
     }

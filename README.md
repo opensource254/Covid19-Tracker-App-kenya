@@ -4,6 +4,15 @@ App to track covid-19 virus in kenya using corona-api
 ## Contributing
 Check out on how to submit your  [contributions](../master/CONTRIBUTING.md) to the project
 
+
+## Screenshots
+<img src="https://github.com/Opensource-254/Covid19-Tracker-App-kenya/blob/master/screenshots/screen1.jpeg" width="250"/> <img
+ src="https://github.com/Opensource-254/Covid19-Tracker-App-kenya/blob/master/screenshots/screen2.jpeg" width="250"/> <img
+ src="https://github.com/Opensource-254/Covid19-Tracker-App-kenya/blob/master/screenshots/screen3.jpeg" width="250"/><img
+ src="https://github.com/Opensource-254/Covid19-Tracker-App-kenya/blob/master/screenshots/screen5.jpeg" width="250"/>
+
+
+
 ## Data Sources
 [Ministry Of Health kenya  ](http://www.health.go.ke/)
 

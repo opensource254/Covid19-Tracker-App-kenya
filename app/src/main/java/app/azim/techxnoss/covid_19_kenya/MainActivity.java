@@ -30,7 +30,6 @@ import androidx.navigation.ui.NavigationUI;
 public class MainActivity extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         Button btn_precautions = findViewById(R.id.Btn_Precautions);
 
 
-          //starting precaution activity
+        //starting precaution activity
         btn_precautions.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, PrecautionsActivity.class));
             //setting up slide up animation
@@ -55,20 +54,19 @@ public class MainActivity extends AppCompatActivity {
     //handling bottom navigation
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = item -> {
-                switch (item.getItemId()) {
-                    case R.id.navigation_home:
-                        return true;
-                    case R.id.navigation_stats:
-                        startActivity(new Intent(MainActivity.this, StatsActivity.class));
-                        overridePendingTransition(R.anim.slide_up, R.anim.no_animation);
+        switch (item.getItemId()) {
+            case R.id.navigation_home:
+                return true;
+            case R.id.navigation_stats:
+                startActivity(new Intent(MainActivity.this, StatsActivity.class));
+                overridePendingTransition(R.anim.slide_up, R.anim.no_animation);
 
-                        return true;
-                    case R.id.navigation_news:
+                return true;
+            case R.id.navigation_news:
 
-                }
-                return false;
-            };
-
+        }
+        return false;
+    };
 
 
 }

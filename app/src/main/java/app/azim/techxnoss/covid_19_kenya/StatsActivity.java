@@ -47,43 +47,32 @@ public class StatsActivity extends AppCompatActivity {
 
         txtCases = findViewById(R.id.txt_cases);
         txtDeaths = findViewById(R.id.txt_deaths);
-         txtTodayDeaths = findViewById(R.id.txt_today_deaths);
-       txtTodayCases = findViewById(R.id.txt_today_cases);
-       txtActive = findViewById(R.id.txt_active);
-       txtCritical = findViewById(R.id.txt_critical);
+        txtTodayDeaths = findViewById(R.id.txt_today_deaths);
+        txtTodayCases = findViewById(R.id.txt_today_cases);
+        txtActive = findViewById(R.id.txt_active);
+        txtCritical = findViewById(R.id.txt_critical);
         txtRecovered = findViewById(R.id.txt_recovered);
 
 
-
-
         //progress dialog
-       // pDialog = new ProgressDialog(this);
-       // pDialog.setMessage("loading...");
-       // pDialog.setCancelable(false);
+        // pDialog = new ProgressDialog(this);
+        // pDialog.setMessage("loading...");
+        // pDialog.setCancelable(false);
 
         //parsing json data
         parseJSON();
-
-
         //adding swipe to refresh
-       final SwipeRefreshLayout pullToRefresh = findViewById(R.id.statsrefresh);
+        final SwipeRefreshLayout pullToRefresh = findViewById(R.id.statsrefresh);
         pullToRefresh.setOnRefreshListener(() -> {
             parseJSON();
             pullToRefresh.setRefreshing(false);
         });
-
-
-       //bottom navigation
+        //bottom navigation
         BottomNavigationView navigation = findViewById(R.id.nav_view);
-
         //setting click listener on bottom nav
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-
     }
-
-
-
     //handling bottom navigation
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = item -> {
@@ -106,12 +95,9 @@ public class StatsActivity extends AppCompatActivity {
      * getting json object {
      */
     private void parseJSON() {
-
-       // showpDialog();
-
+        // showpDialog();
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET,
                 urlJsonObj, null, new Response.Listener<JSONObject>() {
-
             @Override
             public void onResponse(JSONObject response) {
                 Log.d(TAG, response.toString());
@@ -144,21 +130,19 @@ public class StatsActivity extends AppCompatActivity {
                             Toast.LENGTH_LONG).show();
                 }
 
-               // hidepDialog();
+                // hidepDialog();
             }
-
-
 
 
         },
 
                 error -> {
-            VolleyLog.d(TAG, "Error: " + error.getMessage());
-            Toast.makeText(getApplicationContext(),
-                    error.getMessage(), Toast.LENGTH_SHORT).show();
-            // hide the progress dialog
-           // hidepDialog();
-        }) {
+                    VolleyLog.d(TAG, "Error: " + error.getMessage());
+                    Toast.makeText(getApplicationContext(),
+                            error.getMessage(), Toast.LENGTH_SHORT).show();
+                    // hide the progress dialog
+                    // hidepDialog();
+                }) {
 
             //cache for 24 if user not connected to internet
             @Override
@@ -195,7 +179,8 @@ public class StatsActivity extends AppCompatActivity {
                 } catch (JSONException e) {
                     return Response.error(new ParseError(e));
                 }
-            }};
+            }
+        };
 
         // Adding request to request queue
         VolleyController.getInstance().addToRequestQueue(jsonObjReq);

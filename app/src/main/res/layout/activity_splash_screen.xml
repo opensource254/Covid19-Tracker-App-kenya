@@ -4,23 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreenActivity"
-    android:background="@color/colorPrimary">
-
-
+    android:background="@color/colorPrimary"
+    tools:context=".SplashScreenActivity">
 
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="260dp"
         android:layout_height="161dp"
+        android:src="@drawable/covidsplash"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/covidsplash"
-        android:src="@drawable/covidsplash"/>
-
+        tools:srcCompat="@drawable/covidsplash" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
