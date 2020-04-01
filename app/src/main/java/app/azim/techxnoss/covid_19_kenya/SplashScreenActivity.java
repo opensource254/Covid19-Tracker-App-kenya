@@ -10,9 +10,16 @@ import android.view.WindowManager;
 
 public class SplashScreenActivity extends AppCompatActivity {
     private int time_loading = 4000;
+    SwitchPref switchPref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //calling from the Switchpref method
+        switchPref = new SwitchPref(this);
+        //setting default theme on launch
+        if (switchPref.loadNightModeState()) {
+            setTheme(R.style.DarkTheme);
+        } else setTheme(R.style.LightTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 

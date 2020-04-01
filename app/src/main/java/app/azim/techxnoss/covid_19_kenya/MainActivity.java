@@ -34,11 +34,17 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAnalytics mFirebaseAnalytics;
 
 
+    SwitchPref switchPref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //calling from the Switchpref method
+        switchPref = new SwitchPref(this);
+        //setting default theme on launch
+        if (switchPref.loadNightModeState()) {
+            setTheme(R.style.DarkTheme);
+        } else setTheme(R.style.LightTheme);
         super.onCreate(savedInstanceState);
-        setTheme(R.style.LightTheme);
         setContentView(R.layout.activity_main);
 
         BottomNavigationView navigation = findViewById(R.id.nav_view);
@@ -46,9 +52,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button btn_precautions = findViewById(R.id.Btn_Precautions);
-
-// Obtain the FirebaseAnalytics instance.
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
 
         //starting precaution activity

@@ -14,33 +14,36 @@ public class SettingMoreActivity extends AppCompatActivity {
 
     //implementing theme switch
     private SwitchMaterial darkswitch;
+    SwitchPref switchPref;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        //calling from the Switchpref method
+        switchPref = new SwitchPref(this);
         //setting default theme on launch
-        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
+        if (switchPref.loadNightModeState()) {
             setTheme(R.style.DarkTheme);
         } else setTheme(R.style.LightTheme);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting_more);
-        darkswitch =  findViewById(R.id.theme_switch);
 
+        darkswitch = findViewById(R.id.theme_switch);
         //handling theme switch button
-        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
+        if (switchPref.loadNightModeState()) {
             darkswitch.setChecked(true);
 
-        }darkswitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        }
+        darkswitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked){
-                    AppCompatDelegate.setDefaultNightMode( AppCompatDelegate.MODE_NIGHT_YES);
-                      reloadApp();
-                }else {
-                    AppCompatDelegate.setDefaultNightMode( AppCompatDelegate.MODE_NIGHT_NO);
-                      reloadApp();
+                if (isChecked) {
+                    switchPref.setNightModeState(true);
+                    reloadApp();
+                } else {
+                    switchPref.setNightModeState(false);
+                    reloadApp();
 
                 }
 
@@ -49,10 +52,9 @@ public class SettingMoreActivity extends AppCompatActivity {
 
 
     }
-
     //reloads app after theme change
-    public  void  reloadApp(){
-        startActivity(new Intent(getApplicationContext(),SettingMoreActivity.class));
+    public void reloadApp() {
+        startActivity(new Intent(getApplicationContext(), SettingMoreActivity.class));
         finish();
     }
 }

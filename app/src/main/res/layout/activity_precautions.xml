@@ -72,7 +72,6 @@
                         android:layout_marginStart="60dp"
                         android:layout_marginTop="24dp"
                         android:text="SIGNS AND SYMPTOMS"
-                        android:textColor="?attr/colorPrimaryDark"
                         app:layout_constraintEnd_toStartOf="@+id/arrowBtn"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toEndOf="@+id/view"
@@ -115,7 +114,6 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="32dp"
                             android:text="High Body Temperature"
-                            android:textColor="?attr/colorPrimaryDark"
                             app:layout_constraintBottom_toTopOf="@+id/mailIcon"
                             app:layout_constraintStart_toEndOf="@id/phoneIcon"
                             app:layout_constraintTop_toTopOf="@+id/phoneIcon" />
@@ -138,7 +136,6 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="32dp"
                             android:text="Coughing and Sneezing"
-                            android:textColor="?attr/colorPrimaryDark"
                             app:layout_constraintStart_toEndOf="@id/mailIcon"
                             app:layout_constraintTop_toTopOf="@+id/mailIcon" />
 
@@ -160,7 +157,6 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="32dp"
                             android:text="Sore Throat"
-                            android:textColor="?attr/colorPrimaryDark"
                             app:layout_constraintStart_toEndOf="@id/soar_throat_icon"
                             app:layout_constraintTop_toTopOf="@+id/soar_throat_icon" />
 
@@ -181,7 +177,6 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="32dp"
                             android:text="Headache"
-                            android:textColor="?attr/colorPrimaryDark"
                             app:layout_constraintStart_toEndOf="@id/headache_icon"
                             app:layout_constraintTop_toTopOf="@+id/headache_icon" />
 
@@ -202,7 +197,6 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="32dp"
                             android:text="Difficulty in Breathing"
-                            android:textColor="?attr/colorPrimaryDark"
                             app:layout_constraintStart_toEndOf="@id/breathing_icon"
                             app:layout_constraintTop_toTopOf="@+id/breathing_icon" />
 
@@ -268,7 +262,6 @@
                         android:layout_marginStart="60dp"
                         android:layout_marginTop="24dp"
                         android:text="HOW ITS SPREAD"
-                        android:textColor="?attr/colorPrimaryDark"
                         app:layout_constraintEnd_toStartOf="@+id/arrowBtn1"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toEndOf="@+id/view1"
@@ -316,7 +309,6 @@
                     or sneezes These droplets can land in the
                     mouth or noses of people who are nearby or
                     possibly inhaled into lungs"
-                            android:textColor="?attr/colorPrimaryDark"
                             app:layout_constraintStart_toEndOf="@id/phoneIcon1"
                             app:layout_constraintTop_toTopOf="@+id/phoneIcon1" />
 
@@ -340,7 +332,6 @@
                     infected person approximately withing 2 metres 0 6 feet or 2-3 steps.This can be
                     through hugging,kissing,hand shaking
                     or standing close."
-                            android:textColor="?attr/colorPrimaryDark"
                             app:layout_constraintStart_toEndOf="@id/personcontact_icon"
                             app:layout_constraintTop_toTopOf="@+id/personcontact_icon" />
 
