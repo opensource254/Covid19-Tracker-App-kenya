@@ -2,8 +2,9 @@
 
     <resources>
 
-
-        <attr name="colorPrimary" format="color"/>
+    <attr name="colorTxt" format="color"/>
+       <attr name="colorPrimaryCards" format="color"/>
+    <attr name="colorPrimary" format="color"/>
         <attr name="colorPrimaryDark" format="color"/>
         <attr name="colorAccent" format="color"/>
     </resources>

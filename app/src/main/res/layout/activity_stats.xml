@@ -4,19 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorPrimary"
+    android:background="?attr/colorPrimaryDark"
     tools:context=".StatsActivity">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/statsrefresh"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-141dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorTxt"
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -27,231 +32,254 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="48dp"
-                app:cardBackgroundColor="@color/colorCases"
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="?attr/colorPrimaryCards"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="7dp"
+                  >
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="cases" />
-
-                    <TextView
-                        android:id="@+id/txt_cases"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="0" />
+                        android:orientation="vertical"
+                        android:padding="5dp">
 
 
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cases"
+                            android:textColor="?attr/colorTxt"/>
 
+                        <TextView
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorCases"
+                            android:id="@+id/txt_cases"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="__" />
+                    </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView1"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="48dp"
-                app:cardBackgroundColor="@color/colorRecovered"
-                app:layout_constraintEnd_toStartOf="@+id/cardView2"
-                app:layout_constraintHorizontal_bias="0.495"
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="?attr/colorPrimaryCards"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="7dp">
 
-                app:layout_constraintStart_toEndOf="@+id/cardView"
-                app:layout_constraintTop_toBottomOf="@+id/textView">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Recovered" />
-
-                    <TextView
-                        android:id="@+id/txt_recovered"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="0" />
-                </LinearLayout>
+                        android:orientation="vertical"
+                        android:padding="5dp">
 
-            </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:textColor="?attr/colorTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Recovered" />
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView2"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="48dp"
-                android:layout_marginEnd="32dp"
-                app:cardBackgroundColor="@color/colorDeaths"
+                        <TextView
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorRecovered"
+                            android:id="@+id/txt_recovered"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="__" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="?attr/colorPrimaryCards"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="7dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:textColor="?attr/colorTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Deaths" />
+
+                        <TextView
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorDeaths"
+                            android:id="@+id/txt_deaths"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="__" />
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Deaths" />
-
-                    <TextView
-                        android:id="@+id/txt_deaths"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="0" />
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView3"
-                android:layout_width="85dp"
-                android:layout_height="80dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="24dp"
-                app:cardBackgroundColor="@color/colorDeathsToday"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView">
+                app:layout_constraintTop_toBottomOf="@+id/linear2">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="?attr/colorPrimaryCards"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="7dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Today" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Deaths" />
-
-                    <TextView
-                        android:id="@+id/txt_today_deaths"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="0" />
-                </LinearLayout>
+                        android:orientation="vertical"
+                        android:padding="5dp">
 
+                        <TextView
+                            android:textColor="?attr/colorTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Today" />
 
-            </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:textColor="?attr/colorTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Deaths" />
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView5"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="24dp"
-                app:cardBackgroundColor="@color/colorCasesToday"
-                app:layout_constraintEnd_toStartOf="@+id/cardView4"
-                app:layout_constraintHorizontal_bias="0.495"
-                app:layout_constraintStart_toEndOf="@+id/cardView3"
-                app:layout_constraintTop_toBottomOf="@+id/cardView1">
+                        <TextView
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorDeathsToday"
+                            android:id="@+id/txt_today_deaths"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="__" />
+                    </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
+                </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Today" />
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="?attr/colorPrimaryCards"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="7dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Cases" />
-
-                    <TextView
-                        android:id="@+id/txt_today_cases"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="0" />
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView4"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="32dp"
-                app:cardBackgroundColor="@color/colorCritical"
-
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView2">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Critical" />
-
-                    <TextView
-                        android:id="@+id/txt_critical"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="0" />
-                </LinearLayout>
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:textColor="?attr/colorTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Today" />
+
+                        <TextView
+                            android:textColor="?attr/colorTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cases" />
+
+                        <TextView
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorCasesToday"
+                            android:id="@+id/txt_today_cases"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="__" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="?attr/colorPrimaryCards"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="7dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:textColor="?attr/colorTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Critical" />
+
+                        <TextView
+                            android:textColor="?attr/colorTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cases" />
+
+                        <TextView
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorCritical"
+                            android:id="@+id/txt_critical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="__" />
+                    </LinearLayout>
 
 
-            </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
 
             <androidx.cardview.widget.CardView
+                android:backgroundTint="?attr/colorPrimaryCards"
                 android:id="@+id/cardView6"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="32dp"
-                app:cardBackgroundColor="@color/colorActive"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.519"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView5">
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_margin="25dp"
+
+                app:layout_constraintTop_toBottomOf="@+id/linear1"
+                tools:layout_editor_absoluteX="34dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -261,16 +289,20 @@
                     android:padding="5dp">
 
                     <TextView
+                        android:textColor="?attr/colorTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Active" />
 
                     <TextView
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorActive"
                         android:id="@+id/txt_active"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="0" />
+                        android:text="__" />
                 </LinearLayout>
 
 
@@ -282,8 +314,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:background="?android:attr/windowBackground"
+                app:itemIconTint="?attr/colorTxt"
+                app:itemTextAppearanceActive="@color/colorPrimary"
+                app:itemTextColor="?attr/colorTxt"
                 app:backgroundTint="?attr/colorPrimaryDark"
                 app:elevation="0dp"
+                app:itemRippleColor="?attr/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -292,5 +328,7 @@
                 app:layout_constraintVertical_bias="1.0"
                 app:menu="@menu/bottom_nav_menu" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,9 @@
      android:orientation="vertical"
      android:paddingLeft="10dp"
      android:paddingRight="10dp"
-     android:paddingTop="10dp">
+     android:paddingTop="10dp"
+     android:background="?attr/colorPrimaryDark"
+     >
 
 
      <androidx.constraintlayout.widget.ConstraintLayout
@@ -26,7 +28,7 @@
              android:layout_height="100dp"
              android:layout_marginStart="24dp"
              android:src="@mipmap/laucher"
-             android:tint="?attr/colorPrimaryDark"
+             android:tint="?attr/colorPrimary"
              app:layout_constraintBottom_toBottomOf="parent"
              app:layout_constraintStart_toStartOf="parent"
              app:layout_constraintTop_toTopOf="parent"
@@ -35,6 +37,7 @@
          </androidx.appcompat.widget.AppCompatImageView>
 
          <com.google.android.material.textview.MaterialTextView
+             android:textColor="?attr/colorTxt"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:text="covid-19-kenya"
@@ -48,6 +51,7 @@
              app:layout_constraintVertical_bias="0.666" />
 
          <com.google.android.material.textview.MaterialTextView
+             android:textColor="?attr/colorTxt"
              android:id="@+id/materialTextView"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
@@ -76,6 +80,8 @@
 
 
          <TextView
+             android:textColor="?attr/colorTxt"
+             android:tint="?attr/colorPrimary"
              android:drawableLeft="@drawable/ic_email_black_24dp"
              android:drawablePadding="5dp"
              android:layout_width="wrap_content"
@@ -85,6 +91,7 @@
              android:text="Send Feedback" />
 
          <TextView
+             android:textColor="?attr/colorTxt"
              android:drawableLeft="@drawable/ic_info_black_24dp"
              android:drawablePadding="5dp"
              android:layout_width="wrap_content"
@@ -100,18 +107,19 @@
              android:layout_marginTop="10dp"
              android:background="#D6CFCF" />
          <TextView
+             android:textColor="?attr/colorTxt"
              android:paddingStart="40dp"
              android:paddingTop="20dp"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             android:text="Enable Day Mode"/>
+             android:text="Enable Dark Mode"/>
          <com.google.android.material.switchmaterial.SwitchMaterial
              android:id="@+id/theme_switch"
              android:paddingStart="40dp"
              android:paddingEnd="40dp"
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
-             android:text="@string/day_mode"
+             android:text="dark mode"
              android:textColor="?attr/colorPrimaryDark"
              />
 

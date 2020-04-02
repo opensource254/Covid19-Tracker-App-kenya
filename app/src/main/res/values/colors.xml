@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#28383B</color>
-    <color name="colorPrimaryDark">#314549</color>
-    <color name="colorAccent">#FFF</color>
+
+    <color name="colorTxt">#ffffff</color>
+    <color name="colorPrimaryCards">#424242</color>
+    <color name="colorPrimary">#0288D1</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#303030</color>
 
 
-    <color name="colorPrimaryDay">#FDFEFF</color>
-    <color name="colorPrimaryDarkDay">#E3E3E4</color>
-    <color name="colorAccentDay">#7A7776</color>
+    <color name="colorDayTxt">#757575</color>
+    <color name="colorPrimaryDayCards">#ffffff</color>
+    <color name="colorPrimaryDay">#0288D1</color>
+    <color name="colorPrimaryDarkDay">#f5f5f5</color>
+    <color name="colorAccentDay">#e0e0e0</color>
 
     <color name="colorCases">#F4511E</color>
     <color name="colorCasesToday">#A9492A</color>
-    <color name="colorRecovered">#283593</color>
+    <color name="colorRecovered">#0288D1</color>
     <color name="colorDeaths">#D60F0F</color>
     <color name="colorDeathsToday">#9C2133</color>
     <color name="colorActive">#43A047</color>
-    <color name="colorCritical">#75311C</color>
+    <color name="colorCritical">#FFA000</color>
 
 
 

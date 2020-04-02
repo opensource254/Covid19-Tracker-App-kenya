@@ -86,13 +86,13 @@ public class StatsActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.navigation_home:
                 startActivity(new Intent(StatsActivity.this, MainActivity.class));
-                overridePendingTransition(R.anim.slide_up, R.anim.no_animation);
                 finish();
             case R.id.navigation_stats:
 
 
                 return true;
             case R.id.navigation_settings:
+                startActivity(new Intent(StatsActivity.this, SettingMoreActivity.class));
 
         }
         return false;

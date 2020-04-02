@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.navigation_settings:
                 startActivity(new Intent(MainActivity.this, SettingMoreActivity.class));
-                overridePendingTransition(R.anim.slide_up, R.anim.no_animation);
+
 
         }
         return false;

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorPrimary"
+    android:background="?attr/colorPrimaryDark"
     tools:context=".PrecautionsActivity">
 
     <androidx.core.widget.NestedScrollView
@@ -26,13 +26,12 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
-                style="@style/CardView.Dark"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardBackgroundColor="?attr/colorPrimaryCards"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -44,13 +43,14 @@
 
 
                     <com.google.android.material.card.MaterialCardView
+                        android:background="?attr/colorPrimaryCards"
                         android:id="@+id/view"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="10dp"
                         android:elevation="12dp"
-                        app:cardBackgroundColor="?attr/colorPrimary"
+                        app:cardBackgroundColor="?attr/colorPrimaryCards"
                         app:cardCornerRadius="25dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -66,6 +66,7 @@
                     </com.google.android.material.card.MaterialCardView>
 
                     <TextView
+                        android:textColor="?attr/colorTxt"
                         android:id="@+id/desc"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -108,6 +109,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:id="@+id/phoneNumber"
                             style="@style/TextAppearance.AppCompat.Medium"
                             android:layout_width="0dp"
@@ -130,6 +132,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/phoneIcon" />
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:id="@+id/mailNumber"
                             style="@style/TextAppearance.AppCompat.Medium"
                             android:layout_width="0dp"
@@ -151,6 +154,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/mailIcon" />
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:id="@+id/text_soar_throat"
                             style="@style/TextAppearance.AppCompat.Medium"
                             android:layout_width="0dp"
@@ -171,6 +175,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/soar_throat_icon" />
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:id="@+id/headache"
                             style="@style/TextAppearance.AppCompat.Medium"
                             android:layout_width="0dp"
@@ -191,6 +196,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/headache_icon" />
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:id="@+id/breathing"
                             style="@style/TextAppearance.AppCompat.Medium"
                             android:layout_width="0dp"
@@ -209,6 +215,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:background="?attr/colorPrimaryCards"
                 android:id="@+id/cardView1"
                 style="@style/CardView.Dark"
                 android:layout_width="match_parent"
@@ -216,7 +223,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="8dp"
-                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardBackgroundColor="?attr/colorPrimaryCards"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/cardView1"
                 app:layout_constraintTop_toBottomOf="@+id/cardView">
@@ -234,13 +241,14 @@
 
 
                     <androidx.cardview.widget.CardView
+                        android:background="?attr/colorPrimaryCards"
                         android:id="@+id/view1"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="10dp"
                         android:elevation="12dp"
-                        app:cardBackgroundColor="?attr/colorPrimary"
+                        app:cardBackgroundColor="?attr/colorPrimaryCards"
                         app:cardCornerRadius="25dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -256,6 +264,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <TextView
+                        android:textColor="?attr/colorTxt"
                         android:id="@+id/desc1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -299,16 +308,12 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <com.google.android.material.textview.MaterialTextView
+                            android:textColor="?attr/colorTxt"
                             android:id="@+id/phoneNumber1"
-                            style="@style/TextAppearance.AppCompat.Medium"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="22dp"
-                            android:text="Through respiratory droplets produced
-                    when an infected person coughs
-                    or sneezes These droplets can land in the
-                    mouth or noses of people who are nearby or
-                    possibly inhaled into lungs"
+                            android:text="Through respiratory droplets produced when an infected person coughs or sneezes These droplets can land in the mouth or noses of people who are nearby or possibly inhaled into lungs"
                             app:layout_constraintStart_toEndOf="@id/phoneIcon1"
                             app:layout_constraintTop_toTopOf="@+id/phoneIcon1" />
 
@@ -323,15 +328,12 @@
                             app:layout_constraintTop_toBottomOf="@+id/phoneNumber1" />
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:id="@+id/personcontact"
-                            style="@style/TextAppearance.AppCompat.Medium"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="22dp"
-                            android:text="Through close contact with COVID-19
-                    infected person approximately withing 2 metres 0 6 feet or 2-3 steps.This can be
-                    through hugging,kissing,hand shaking
-                    or standing close."
+                            android:text="Through close contact with COVID-19 infected person approximately withing 2 metres 0 6 feet or 2-3 steps.This can bethrough hugging,kissing,hand shaking or standing close."
                             app:layout_constraintStart_toEndOf="@id/personcontact_icon"
                             app:layout_constraintTop_toTopOf="@+id/personcontact_icon" />
 
@@ -346,13 +348,13 @@
                             app:layout_constraintTop_toBottomOf="@+id/personcontact" />
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:id="@+id/touching"
-                            style="@style/TextAppearance.AppCompat.Medium"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="22dp"
+                            android:layout_marginLeft="20dp"
                             android:text="By touching objects and surfaces contaminated by Coronavirus and then touching the mouth , nose or eyes."
-                            android:textColor="?attr/colorPrimaryDark"
                             app:layout_constraintStart_toEndOf="@id/touching_icon"
                             app:layout_constraintTop_toTopOf="@+id/touching_icon" />
 
@@ -364,13 +366,14 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:background="?attr/colorPrimaryCards"
                 android:id="@+id/cardView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="10dp"
-                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardBackgroundColor="?attr/colorPrimaryCards"
                 app:layout_constraintTop_toBottomOf="@+id/cardView1">
 
 
@@ -392,6 +395,7 @@
                             android:src="@drawable/tap" />
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -413,6 +417,7 @@
                             android:src="@drawable/sanitizer" />
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -434,6 +439,7 @@
                             android:src="@drawable/sneeze" />
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -455,6 +461,7 @@
                             android:src="@drawable/shake" />
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -476,6 +483,7 @@
                             android:src="@drawable/stayhome" />
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -496,6 +504,7 @@
                             android:src="@drawable/protect" />
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -511,13 +520,14 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:background="?attr/colorPrimaryCards"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardBackgroundColor="?attr/colorPrimaryCards"
                 app:layout_constraintTop_toBottomOf="@+id/cardView3">
 
 
@@ -534,6 +544,7 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
@@ -542,6 +553,7 @@
 
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -549,6 +561,7 @@
                             android:text=". Self quarantine is an act of individuals who may have been exposed to COVID-19 separating themselves for 14 days to monitor if the develope symptoms." />
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -556,6 +569,7 @@
                             android:text="WHO SHOULD SELF QUARANTINE ?" />
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -563,6 +577,7 @@
                             android:text=". Anyone who has traveled within the past 14 days to a country with sustained reported COVID-19 cases or has had close contact with a person showing COVID-19 symptoms." />
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -570,6 +585,7 @@
                             android:text="WHAT DOES SELF QUARANTINE ENTAIL ?" />
 
                         <TextView
+                            android:textColor="?attr/colorTxt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"

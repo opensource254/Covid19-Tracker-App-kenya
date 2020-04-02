@@ -13,6 +13,9 @@
 
 
     <style name="DarkTheme" parent="Theme.MaterialComponents.NoActionBar">
+
+        <item name="colorPrimaryCards">@color/colorPrimaryCards</item>
+        <item name="colorTxt">@color/colorTxt</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -20,6 +23,8 @@
     </style>
 
     <style name="LightTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimaryCards">@color/colorPrimaryDayCards</item>
+        <item name="colorTxt">@color/colorDayTxt</item>
         <item name="colorPrimary">@color/colorPrimaryDay</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDarkDay</item>
         <item name="colorAccent">@color/colorAccentDay</item>

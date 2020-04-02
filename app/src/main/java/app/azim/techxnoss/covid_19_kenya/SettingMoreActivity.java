@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 
@@ -57,4 +58,12 @@ public class SettingMoreActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), SettingMoreActivity.class));
         finish();
     }
+
+    //restating activity on back pressed
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(this, StatsActivity.class));
+    }
+
 }
+
