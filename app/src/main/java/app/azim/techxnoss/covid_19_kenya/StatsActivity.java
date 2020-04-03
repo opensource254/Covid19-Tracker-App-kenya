@@ -93,6 +93,8 @@ public class StatsActivity extends AppCompatActivity {
                 return true;
             case R.id.navigation_settings:
                 startActivity(new Intent(StatsActivity.this, SettingMoreActivity.class));
+                finish();
+
 
         }
         return false;

@@ -12,6 +12,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     private int time_loading = 4000;
     SwitchPref switchPref;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //calling from the Switchpref method
@@ -24,7 +25,6 @@ public class SplashScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
 
         //set status to transparent
-
         Window window = getWindow();
         window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 

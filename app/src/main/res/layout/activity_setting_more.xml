@@ -80,26 +80,34 @@
 
 
          <TextView
+             android:background="?android:attr/selectableItemBackground"
+             android:clickable="true"
+             android:id="@+id/txt_mail"
              android:textColor="?attr/colorTxt"
              android:tint="?attr/colorPrimary"
              android:drawableLeft="@drawable/ic_email_black_24dp"
              android:drawablePadding="5dp"
-             android:layout_width="wrap_content"
+             android:layout_width="match_parent"
              android:layout_height="wrap_content"
              android:paddingStart="40dp"
              android:paddingTop="20dp"
-             android:text="Send Feedback" />
+             android:text="Send Feedback"
+             android:focusable="true" />
 
          <TextView
+             android:background="?android:attr/selectableItemBackground"
+             android:clickable="true"
+             android:id="@+id/txt_about"
              android:textColor="?attr/colorTxt"
              android:drawableLeft="@drawable/ic_info_black_24dp"
              android:drawablePadding="5dp"
-             android:layout_width="wrap_content"
+             android:layout_width="match_parent"
              android:layout_height="wrap_content"
              android:paddingStart="40dp"
              android:paddingTop="25dp"
              android:paddingBottom="20dp"
-             android:text="About Opensource254" />
+             android:text="About Opensource254"
+             android:focusable="true" />
 
          <LinearLayout
              android:layout_width="match_parent"

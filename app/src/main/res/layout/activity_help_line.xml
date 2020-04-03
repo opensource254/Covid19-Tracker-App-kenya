@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryDark"
+    tools:context=".HelpLineActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:textColor="?attr/colorTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:text="Reporting Illness"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:textColor="?attr/colorTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you feel unwell, have a cold or a cough or fever, please call 719 or text *719# which is a toll-free number provided by the Government of Kenya.
+" />
+
+        <com.google.android.material.card.MaterialCardView
+            app:cardBackgroundColor="?attr/colorPrimaryCards"
+            android:elevation="7dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:textColor="?attr/colorTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:text="You can also call the following County Hotline numbers:"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:textColor="?attr/colorTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="NAIROBI" />
+
+                <com.google.android.material.circularreveal.CircularRevealLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:textColor="?attr/colorTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:drawableLeft="@drawable/ic_call_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:paddingStart="10dp"
+                            android:text="0732353535"
+                            android:textSize="15sp"
+                            android:tint="?attr/colorPrimary" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btn_no_nairobi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:text=" call">
+
+                            </com.google.android.material.button.MaterialButton>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:textColor="?attr/colorTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="GARRISA" />
+
+                <com.google.android.material.circularreveal.CircularRevealLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:drawableLeft="@drawable/ic_call_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:paddingStart="10dp"
+                            android:text="0111207207 | 0110040836 "
+                            android:textColor="?attr/colorTxt"
+                            android:textSize="13sp"
+                            android:tint="?attr/colorPrimary" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btn_no_garisa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:text=" call">
+
+                            </com.google.android.material.button.MaterialButton>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:textColor="?attr/colorTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="TURKANA" />
+
+                <com.google.android.material.circularreveal.CircularRevealLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:drawableLeft="@drawable/ic_call_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:paddingStart="10dp"
+                            android:text="0732353535 "
+                            android:textColor="?attr/colorTxt"
+                            android:textSize="15sp"
+                            android:tint="?attr/colorPrimary" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btn_no_turkana"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:text=" call">
+
+                            </com.google.android.material.button.MaterialButton>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

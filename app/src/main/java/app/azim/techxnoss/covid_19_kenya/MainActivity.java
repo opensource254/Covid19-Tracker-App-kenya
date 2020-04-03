@@ -30,9 +30,6 @@ import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
 
-    //implementing firebase analytics
-    private FirebaseAnalytics mFirebaseAnalytics;
-
 
     SwitchPref switchPref;
 
@@ -47,11 +44,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        //implementing firebase analytics
+        FirebaseAnalytics.getInstance(this);
         BottomNavigationView navigation = findViewById(R.id.nav_view);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
 
         Button btn_precautions = findViewById(R.id.Btn_Precautions);
+        Button btn_Helpline = findViewById(R.id.Btn_Helpline);
 
 
         //starting precaution activity
@@ -61,7 +62,17 @@ public class MainActivity extends AppCompatActivity {
             overridePendingTransition(R.anim.slide_up, R.anim.no_animation);
 
         });
+
+        //starting precaution activity
+        btn_Helpline.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this,HelpLineActivity.class));
+
+
+
+        });
     }
+
+
 
     //handling bottom navigation
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -72,10 +83,14 @@ public class MainActivity extends AppCompatActivity {
             case R.id.navigation_stats:
                 startActivity(new Intent(MainActivity.this, StatsActivity.class));
                 overridePendingTransition(R.anim.slide_up, R.anim.no_animation);
+                finish();
+
 
                 return true;
             case R.id.navigation_settings:
                 startActivity(new Intent(MainActivity.this, SettingMoreActivity.class));
+                finish();
+
 
 
         }
