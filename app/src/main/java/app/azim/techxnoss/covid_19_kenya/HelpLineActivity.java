@@ -1,6 +1,7 @@
 package app.azim.techxnoss.covid_19_kenya;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -9,6 +10,7 @@ import android.widget.Button;
 
 public class HelpLineActivity extends AppCompatActivity {
     SwitchPref switchPref;
+    private Toolbar mtoolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,11 @@ public class HelpLineActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_line);
+
+        mtoolbar = findViewById(R.id.help_tool_bar);
+        setSupportActionBar(mtoolbar);
+        if (getSupportActionBar() != null)
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Button btn_telnai = findViewById(R.id.btn_no_nairobi);
         Button btn_telgarrisa = findViewById(R.id.btn_no_garisa);
@@ -50,6 +57,14 @@ public class HelpLineActivity extends AppCompatActivity {
 
         });
 
+
+    }
+
+    //setting navigate up button for the toolbar
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
 
     }
 }

@@ -2,6 +2,7 @@ package app.azim.techxnoss.covid_19_kenya;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -18,7 +19,8 @@ public class SettingMoreActivity extends AppCompatActivity {
     //implementing theme switch
     private SwitchMaterial darkswitch;
     SwitchPref switchPref;
-    private    String versionName = BuildConfig.VERSION_NAME;
+    private String versionName = BuildConfig.VERSION_NAME;
+    private Toolbar mtoolbar;
 
 
     @Override
@@ -33,11 +35,15 @@ public class SettingMoreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting_more);
 
+        mtoolbar = findViewById(R.id.setting_tool_bar);
+        setSupportActionBar(mtoolbar);
+        if (getSupportActionBar() != null)
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         TextView txtMail = findViewById(R.id.txt_mail);
         TextView txtAbout = findViewById(R.id.txt_about);
-        TextView version =  findViewById(R.id.materialTextView);
+        TextView version = findViewById(R.id.materialTextView);
         version.setText("Version: " + versionName);
-
 
 
         //sendmaail
@@ -54,7 +60,6 @@ public class SettingMoreActivity extends AppCompatActivity {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Opensource-254")));
 
         });
-
 
 
         darkswitch = findViewById(R.id.theme_switch);
@@ -80,6 +85,7 @@ public class SettingMoreActivity extends AppCompatActivity {
 
 
     }
+
     //reloads app after theme change
     public void reloadApp() {
         startActivity(new Intent(getApplicationContext(), SettingMoreActivity.class));
@@ -91,6 +97,15 @@ public class SettingMoreActivity extends AppCompatActivity {
     public void onBackPressed() {
         startActivity(new Intent(this, StatsActivity.class));
         finish();
+
+    }
+
+    //setting navigate up button for the toolbar
+    @Override
+    public boolean onSupportNavigateUp() {
+        startActivity(new Intent(this, StatsActivity.class));
+        finish();
+        return true;
 
     }
 

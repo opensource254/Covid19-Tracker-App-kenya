@@ -16,9 +16,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/LightTheme">
-        <activity android:name=".HelpLineActivity" />
-        <activity android:name=".SettingMoreActivity" />
-        <activity android:name=".SettingsActivity" />
+        <activity android:name=".HelpLineActivity"
+            android:label="reporting illness" />
+        <activity android:name=".SettingMoreActivity"
+            android:label="settings"/>
 
         <meta-data
             android:name="firebase_performance_logcat_enabled"

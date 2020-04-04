@@ -26,4 +26,6 @@
     <string name="what_is_self_quarantine_body">. Self quarantine is an act of individuals who may have been exposed to COVID-19 separating themselves for 14 days to monitor if the develope symptoms.</string>
     <string name="anyone_who_travel">. Anyone who has traveled within the past 14 days to a country with sustained reported COVID-19 cases or has had close contact with a person showing COVID-19 symptoms.</string>
     <string name="what_does_self_quarantine_entail">WHAT DOES SELF QUARANTINE ENTAIL ?</string>
+    <string name="reporting_illness">Reporting Illness</string>
+    <string name="if_you_feel_unwell">If you feel unwell, have a cold or a cough or fever, please call 719 or text *719# which is a toll-free number provided by the Government of Kenya.</string>
 </resources>
