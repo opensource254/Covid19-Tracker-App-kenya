@@ -32,7 +32,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PrecautionsActivity" />
+        <activity android:name=".PrecautionsActivity"
+            android:label="precautions" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" />

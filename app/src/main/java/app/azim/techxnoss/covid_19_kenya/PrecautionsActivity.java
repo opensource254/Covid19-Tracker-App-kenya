@@ -1,6 +1,7 @@
 package app.azim.techxnoss.covid_19_kenya;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
@@ -16,6 +17,7 @@ public class PrecautionsActivity extends AppCompatActivity {
     Button arrowBtn, arrowBtn1;
     CardView cardView, cardView1;
     SwitchPref switchPref;
+    private Toolbar mtoolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,11 @@ public class PrecautionsActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_precautions);
+
+        mtoolbar = findViewById(R.id.tool_bar);
+        setSupportActionBar(mtoolbar);
+        if (getSupportActionBar() != null)
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         expandableView = findViewById(R.id.expandableView);
         expandableView1 = findViewById(R.id.expandableView1);
