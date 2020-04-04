@@ -28,8 +28,9 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         //hiding status bar
         View decorView = getWindow().getDecorView();
-       // Hide the status bar.
-        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+       // Hide the status bar and bottom navbar
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
         setContentView(R.layout.activity_splash_screen);
