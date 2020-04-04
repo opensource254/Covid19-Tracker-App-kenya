@@ -89,7 +89,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="60dp"
                         android:layout_marginTop="24dp"
-                        android:text="SIGNS AND SYMPTOMS"
+                        android:text="@string/signs_and_symptoms"
                         android:textColor="?attr/colorTxt"
                         app:layout_constraintEnd_toStartOf="@+id/arrowBtn"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -132,7 +132,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="32dp"
-                            android:text="High Body Temperature"
+                            android:text="@string/high_body_temperature"
                             android:textColor="?attr/colorTxt"
                             app:layout_constraintBottom_toTopOf="@+id/mailIcon"
                             app:layout_constraintStart_toEndOf="@id/phoneIcon"
@@ -155,7 +155,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="32dp"
-                            android:text="Coughing and Sneezing"
+                            android:text="@string/coughing_and_sneezing"
                             android:textColor="?attr/colorTxt"
                             app:layout_constraintStart_toEndOf="@id/mailIcon"
                             app:layout_constraintTop_toTopOf="@+id/mailIcon" />
@@ -177,7 +177,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="32dp"
-                            android:text="Sore Throat"
+                            android:text="@string/sore_throat"
                             android:textColor="?attr/colorTxt"
                             app:layout_constraintStart_toEndOf="@id/soar_throat_icon"
                             app:layout_constraintTop_toTopOf="@+id/soar_throat_icon" />
@@ -198,7 +198,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="32dp"
-                            android:text="Headache"
+                            android:text="@string/headache"
                             android:textColor="?attr/colorTxt"
                             app:layout_constraintStart_toEndOf="@id/headache_icon"
                             app:layout_constraintTop_toTopOf="@+id/headache_icon" />
@@ -219,7 +219,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="32dp"
-                            android:text="Difficulty in Breathing"
+                            android:text="@string/difficulty_in_breathing"
                             android:textColor="?attr/colorTxt"
                             app:layout_constraintStart_toEndOf="@id/breathing_icon"
                             app:layout_constraintTop_toTopOf="@+id/breathing_icon" />
@@ -287,7 +287,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="60dp"
                         android:layout_marginTop="24dp"
-                        android:text="HOW ITS SPREAD"
+                        android:text="@string/how_its_spread"
                         android:textColor="?attr/colorTxt"
                         app:layout_constraintEnd_toStartOf="@+id/arrowBtn1"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -330,7 +330,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="22dp"
-                            android:text="Through respiratory droplets produced when an infected person coughs or sneezes These droplets can land in the mouth or noses of people who are nearby or possibly inhaled into lungs"
+                            android:text="@string/infection1"
                             android:textColor="?attr/colorTxt"
                             app:layout_constraintStart_toEndOf="@id/phoneIcon1"
                             app:layout_constraintTop_toTopOf="@+id/phoneIcon1" />
@@ -350,7 +350,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="22dp"
-                            android:text="Through close contact with COVID-19 infected person approximately withing 2 metres 0 6 feet or 2-3 steps.This can bethrough hugging,kissing,hand shaking or standing close."
+                            android:text="@string/infection2"
                             android:textColor="?attr/colorTxt"
                             app:layout_constraintStart_toEndOf="@id/personcontact_icon"
                             app:layout_constraintTop_toTopOf="@+id/personcontact_icon" />
@@ -371,7 +371,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="22dp"
                             android:layout_marginLeft="20dp"
-                            android:text="By touching objects and surfaces contaminated by Coronavirus and then touching the mouth , nose or eyes."
+                            android:text="@string/infection3"
                             android:textColor="?attr/colorTxt"
                             app:layout_constraintStart_toEndOf="@id/touching_icon"
                             app:layout_constraintTop_toTopOf="@+id/touching_icon" />
@@ -417,7 +417,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="Wash your hands regulary with soap and running water or boiled cooled water"
+                            android:text="@string/prevention1"
                             android:textColor="?attr/colorTxt" />
 
 
@@ -439,7 +439,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="using an alcohol-based hand sanitizer"
+                            android:text="@string/prevention2"
                             android:textColor="?attr/colorTxt" />
 
 
@@ -461,7 +461,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="cough or sneez into a diposable tissue or bent elbow, and wash hands immediately. Dispose the tissue in a trash or burn it"
+                            android:text="@string/prevention3"
                             android:textColor="?attr/colorTxt" />
 
 
@@ -483,7 +483,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="Avoid shaking hands , hugging or kissing with people with flu-like symptoms"
+                            android:text="@string/prevention4"
                             android:textColor="?attr/colorTxt" />
 
 
@@ -505,7 +505,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="Person with a cough or sneezing should stay home or keep a social distance and avoid mixing with othe crowds"
+                            android:text="@string/prevention5"
                             android:textColor="?attr/colorTxt" />
 
 
@@ -526,7 +526,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="maintain good respiratory hygiene by covering your mouth and nose while coughing and sneezing with a handkerchief, tissue. or into flexed elbow"
+                            android:text="@string/prevention6"
                             android:textColor="?attr/colorTxt" />
 
 
@@ -566,7 +566,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:padding="5dp"
-                            android:text="WHAT IS SELF QUARANTINE ?"
+                            android:text="@string/what_is_self_quarantine"
                             android:textColor="?attr/colorTxt" />
 
 
@@ -575,7 +575,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:padding="5dp"
-                            android:text=". Self quarantine is an act of individuals who may have been exposed to COVID-19 separating themselves for 14 days to monitor if the develope symptoms."
+                            android:text="@string/what_is_self_quarantine_body"
                             android:textColor="?attr/colorTxt" />
 
                         <TextView
@@ -591,7 +591,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:padding="5dp"
-                            android:text=". Anyone who has traveled within the past 14 days to a country with sustained reported COVID-19 cases or has had close contact with a person showing COVID-19 symptoms."
+                            android:text="@string/anyone_who_travel"
                             android:textColor="?attr/colorTxt" />
 
                         <TextView
@@ -599,7 +599,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="WHAT DOES SELF QUARANTINE ENTAIL ?"
+                            android:text="@string/what_does_self_quarantine_entail"
                             android:textColor="?attr/colorTxt" />
 
                         <TextView
@@ -609,7 +609,7 @@
                             android:padding="5dp"
                             android:text="@string/quarantine"
                             android:textColor="?attr/colorTxt"
-                            tools:ignore="HardcodedText" />
+                          />
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
 

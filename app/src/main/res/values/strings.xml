@@ -6,4 +6,24 @@
     <string name="common_symptoms">FEVER . HEADACHE . DRY COUGH . FATIGUE . MUSCLE PAIN . SHORTNESS OF BREATH</string>
     <string name="day_mode">Day Mode</string>
     <string name="quarantine">1.stay in a separate room and use a separate bathroom if available.Disinfect surfaces and clothing.\n 2.Ensure surfaces in the household are cleaned and disinfected.\n 3.Avoid sharing household items.Wash this items thoroughly after use.\n 4.Clean your hands with soap and running water for up to 20 seconds.if that is not available,clean with alcohol based hand sanitizer.\n 5.No visitors unless the person needs to be in your home.\n 6.wear a facemask if you must be around other people.</string>
+    <string name="signs_and_symptoms">SIGNS AND SYMPTOMS</string>
+    <string name="high_body_temperature">High Body Temperature</string>
+    <string name="coughing_and_sneezing">Coughing and Sneezing</string>
+    <string name="sore_throat">Sore Throat</string>
+    <string name="headache">Headache</string>
+    <string name="difficulty_in_breathing">Difficulty in Breathing</string>
+    <string name="how_its_spread">HOW ITS SPREAD</string>
+    <string name="infection1">Through respiratory droplets produced when an infected person coughs or sneezes These droplets can land in the mouth or noses of people who are nearby or possibly inhaled into lungs</string>
+    <string name="infection2">Through close contact with COVID-19 infected person approximately withing 2 metres 0 6 feet or 2-3 steps.This can bethrough hugging,kissing,hand shaking or standing close.</string>
+    <string name="infection3">By touching objects and surfaces contaminated by Coronavirus and then touching the mouth , nose or eyes.</string>
+    <string name="prevention1">Wash your hands regulary with soap and running water or boiled cooled water</string>
+    <string name="prevention2">using an alcohol-based hand sanitizer</string>
+    <string name="prevention3">cough or sneez into a diposable tissue or bent elbow, and wash hands immediately. Dispose the tissue in a trash or burn it</string>
+    <string name="prevention4">Avoid shaking hands , hugging or kissing with people with flu-like symptoms</string>
+    <string name="prevention5">Person with a cough or sneezing should stay home or keep a social distance and avoid mixing with othe crowds</string>
+    <string name="prevention6">maintain good respiratory hygiene by covering your mouth and nose while coughing and sneezing with a handkerchief, tissue. or into flexed elbow</string>
+    <string name="what_is_self_quarantine">WHAT IS SELF QUARANTINE ?</string>
+    <string name="what_is_self_quarantine_body">. Self quarantine is an act of individuals who may have been exposed to COVID-19 separating themselves for 14 days to monitor if the develope symptoms.</string>
+    <string name="anyone_who_travel">. Anyone who has traveled within the past 14 days to a country with sustained reported COVID-19 cases or has had close contact with a person showing COVID-19 symptoms.</string>
+    <string name="what_does_self_quarantine_entail">WHAT DOES SELF QUARANTINE ENTAIL ?</string>
 </resources>
