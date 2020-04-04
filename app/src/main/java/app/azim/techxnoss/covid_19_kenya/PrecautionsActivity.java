@@ -76,4 +76,12 @@ public class PrecautionsActivity extends AppCompatActivity {
 
 
     }
+
+    //setting navigate up button for the toolbar
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
+
+    }
 }

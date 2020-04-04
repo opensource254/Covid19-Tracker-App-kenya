@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,15 +23,15 @@
         android:background="?attr/colorPrimaryDark"
         />
     </com.google.android.material.appbar.AppBarLayout>
+
     <androidx.core.widget.NestedScrollView
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="70dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/app_bar_layout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/app_bar_layout">
+        app:layout_constraintTop_toBottomOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -607,13 +607,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:padding="5dp"
-                            android:text="1.stay in a separate room and use a separate bathroom if available.Disinfect surfaces and clothing.\n
-2.Ensure surfaces in the household are cleaned and disinfected.\n
-3.Avoid sharing household items.Wash this items thoroughly after use.\n
-4.Clean your hands with soap and running water for up to 20 seconds.if that is not available,clean with alcohol based hand sanitizer.\n
-5.No visitors unless the person needs to be in your home.\n
-6.wear a facemask if you must be around other people."
-                            android:textColor="?attr/colorTxt" />
+                            android:text="@string/quarantine"
+                            android:textColor="?attr/colorTxt"
+                            tools:ignore="HardcodedText" />
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
 
@@ -625,4 +621,4 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
