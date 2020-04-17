@@ -31,7 +31,7 @@ public class StatsActivity extends AppCompatActivity {
 
 
     //json API object url
-    private String urlJsonObj = "https://corona.lmao.ninja/countries/kenya";
+    private String urlJsonObj = "https://corona.lmao.ninja/v2/countries/kenya";
     private static String TAG = MainActivity.class.getSimpleName();
     // Progress dialog
     private ProgressDialog pDialog;

@@ -60,10 +60,10 @@ dependencies {
     // Add the Firebase SDK for Crashlytics.
     implementation 'com.google.firebase:firebase-crashlytics:17.0.0-beta03'
 
-    // Add the Firebase perfomance
+    // Add the Firebase perfoman
     implementation 'com.google.firebase:firebase-perf:19.0.5'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'com.android.support:cardview-v7:28.0.0'
+   // implementation 'com.android.support:cardview-v7:28.0.0'
 
 
 }
