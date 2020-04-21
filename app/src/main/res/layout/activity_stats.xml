@@ -196,7 +196,8 @@
                     android:backgroundTint="?attr/colorPrimaryCards"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:layout_margin="7dp">
+                    android:layout_margin="7dp"
+                    >
 
                     <LinearLayout
                         android:layout_width="wrap_content"
