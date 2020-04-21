@@ -1,4 +1,5 @@
 # Covid19-Tracker-App-kenya
+[![Gitter](https://badges.gitter.im/opensource-254/community.svg)](https://gitter.im/opensource-254/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 App to track covid-19 virus in kenya using corona-api
 
 ## Running the APK
