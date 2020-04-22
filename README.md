@@ -1,7 +1,9 @@
 # Covid19-Tracker-App-kenya
 [![GitHub issues](https://img.shields.io/github/issues/opensource254/Covid19-Tracker-App-kenya?style=for-the-badge)](https://github.com/opensource254/Covid19-Tracker-App-kenya/issues) [![GitHub forks](https://img.shields.io/github/forks/opensource254/Covid19-Tracker-App-kenya?style=for-the-badge)](https://github.com/opensource254/Covid19-Tracker-App-kenya/network) [![GitHub stars](https://img.shields.io/github/stars/opensource254/Covid19-Tracker-App-kenya?style=for-the-badge)](https://github.com/opensource254/Covid19-Tracker-App-kenya/stargazers) [![GitHub license](https://img.shields.io/github/license/opensource254/Covid19-Tracker-App-kenya?style=for-the-badge)](https://github.com/opensource254/Covid19-Tracker-App-kenya/blob/master/LICENSE)
 
-[![Gitter](https://img.shields.io/gitter.im/?style=for-the-badge)](https://gitter.im/opensource-254/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+
+[![GitHub license](https://img.shields.io/gitter/room/opensource-254/community?color=brown&style=for-the-badge)](https://gitter.im/opensource-254/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+
 
 
 
