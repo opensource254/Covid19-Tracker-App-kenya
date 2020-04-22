@@ -1,5 +1,7 @@
 # Covid19-Tracker-App-kenya
-[![Gitter](https://badges.gitter.im/opensource-254/community.svg)](https://gitter.im/opensource-254/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![GitHub issues](https://img.shields.io/github/issues/opensource254/Covid19-Tracker-App-kenya?style=for-the-badge)](https://github.com/opensource254/Covid19-Tracker-App-kenya/issues) [![GitHub forks](https://img.shields.io/github/forks/opensource254/Covid19-Tracker-App-kenya?style=for-the-badge)](https://github.com/opensource254/Covid19-Tracker-App-kenya/network) [![GitHub stars](https://img.shields.io/github/stars/opensource254/Covid19-Tracker-App-kenya?style=for-the-badge)](https://github.com/opensource254/Covid19-Tracker-App-kenya/stargazers) [![GitHub license](https://img.shields.io/github/license/opensource254/Covid19-Tracker-App-kenya?style=for-the-badge)](https://github.com/opensource254/Covid19-Tracker-App-kenya/blob/master/LICENSE)
+
+[![Gitter](https://badges.gitter.im/opensource-254/community.svg)](https://gitter.im/opensource-254/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) 
 
 App to track covid-19 virus in kenya using corona-api
 
