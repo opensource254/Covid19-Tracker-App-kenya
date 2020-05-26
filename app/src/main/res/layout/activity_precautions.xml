@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="?attr/colorPrimaryDark"
     tools:context=".PrecautionsActivity">
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar_layout"
         android:layout_width="match_parent"
@@ -16,12 +17,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:liftOnScroll="true">
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/tool_bar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimaryDark"
-        />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimaryDark" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
@@ -504,6 +505,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/open_sans"
                             android:padding="5dp"
                             android:text="@string/prevention5"
                             android:textColor="?attr/colorTxt" />
@@ -608,8 +610,7 @@
                             android:layout_gravity="center_vertical"
                             android:padding="5dp"
                             android:text="@string/quarantine"
-                            android:textColor="?attr/colorTxt"
-                          />
+                            android:textColor="?attr/colorTxt" />
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
 
