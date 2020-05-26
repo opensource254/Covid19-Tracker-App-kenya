@@ -44,33 +44,27 @@ public class PrecautionsActivity extends AppCompatActivity {
         cardView1 = findViewById(R.id.cardView1);
 
 
-        arrowBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (expandableView.getVisibility() == View.GONE) {
-                    TransitionManager.beginDelayedTransition(cardView, new AutoTransition());
-                    expandableView.setVisibility(View.VISIBLE);
-                    arrowBtn.setBackgroundResource(R.drawable.ic_keyboard_arrow_up_black_24dp);
-                } else {
-                    TransitionManager.beginDelayedTransition(cardView, new AutoTransition());
-                    expandableView.setVisibility(View.GONE);
-                    arrowBtn.setBackgroundResource(R.drawable.ic_keyboard_arrow_down_black_24dp);
-                }
+        arrowBtn.setOnClickListener(v -> {
+            if (expandableView.getVisibility() == View.GONE) {
+                TransitionManager.beginDelayedTransition(cardView, new AutoTransition());
+                expandableView.setVisibility(View.VISIBLE);
+                arrowBtn.setBackgroundResource(R.drawable.ic_keyboard_arrow_up_black_24dp);
+            } else {
+                TransitionManager.beginDelayedTransition(cardView, new AutoTransition());
+                expandableView.setVisibility(View.GONE);
+                arrowBtn.setBackgroundResource(R.drawable.ic_keyboard_arrow_down_black_24dp);
             }
         });
 
-        arrowBtn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (expandableView1.getVisibility() == View.GONE) {
-                    TransitionManager.beginDelayedTransition(cardView1, new AutoTransition());
-                    expandableView1.setVisibility(View.VISIBLE);
-                    arrowBtn1.setBackgroundResource(R.drawable.ic_keyboard_arrow_up_black_24dp);
-                } else {
-                    TransitionManager.beginDelayedTransition(cardView1, new AutoTransition());
-                    expandableView1.setVisibility(View.GONE);
-                    arrowBtn1.setBackgroundResource(R.drawable.ic_keyboard_arrow_down_black_24dp);
-                }
+        arrowBtn1.setOnClickListener(v -> {
+            if (expandableView1.getVisibility() == View.GONE) {
+                TransitionManager.beginDelayedTransition(cardView1, new AutoTransition());
+                expandableView1.setVisibility(View.VISIBLE);
+                arrowBtn1.setBackgroundResource(R.drawable.ic_keyboard_arrow_up_black_24dp);
+            } else {
+                TransitionManager.beginDelayedTransition(cardView1, new AutoTransition());
+                expandableView1.setVisibility(View.GONE);
+                arrowBtn1.setBackgroundResource(R.drawable.ic_keyboard_arrow_down_black_24dp);
             }
         });
 
