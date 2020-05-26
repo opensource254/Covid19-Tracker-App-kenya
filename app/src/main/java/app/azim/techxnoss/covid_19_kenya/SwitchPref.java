@@ -3,26 +3,25 @@ package app.azim.techxnoss.covid_19_kenya;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-public class SwitchPref {
+class SwitchPref {
 
-    SharedPreferences mSwitchpref;
+    private SharedPreferences mSwitchpref;
 
-    public SwitchPref(Context context) {
+    SwitchPref(Context context) {
 
         mSwitchpref = context.getSharedPreferences("filename", Context.MODE_PRIVATE);
     }
 
     //Saving nightstate mode using boolean
-    public void setNightModeState(Boolean state) {
+    void setNightModeState(Boolean state) {
         SharedPreferences.Editor editor = mSwitchpref.edit();
         editor.putBoolean("NightMode", state);
-        editor.commit();
+        editor.apply();
     }
 
     //loading night mode state
-    public Boolean loadNightModeState() {
-        Boolean state = mSwitchpref.getBoolean("NightMode", false);
-        return state;
+    Boolean loadNightModeState() {
+        return mSwitchpref.getBoolean("NightMode", false);
     }
 
 }
