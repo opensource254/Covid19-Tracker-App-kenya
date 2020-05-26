@@ -65,13 +65,11 @@ public class MainActivity extends AppCompatActivity {
 
         //starting precaution activity
         btn_Helpline.setOnClickListener(v -> {
-            startActivity(new Intent(MainActivity.this,HelpLineActivity.class));
-
+            startActivity(new Intent(MainActivity.this, HelpLineActivity.class));
 
 
         });
     }
-
 
 
     //handling bottom navigation
@@ -90,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.navigation_settings:
                 startActivity(new Intent(MainActivity.this, SettingMoreActivity.class));
                 finish();
-
 
 
         }
