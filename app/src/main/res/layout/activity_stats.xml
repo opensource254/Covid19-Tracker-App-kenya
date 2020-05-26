@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorPrimaryDark"
     tools:context=".StatsActivity">
+
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/statsrefresh"
@@ -16,21 +17,24 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
 
             <TextView
-                android:textSize="32sp"
-                android:textStyle="bold"
-                android:textColor="?attr/colorTxt"
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="52dp"
                 android:text="KENYA COVID-19"
+                android:textColor="?attr/colorTxt"
+                android:textSize="32sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.501"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
 
             <LinearLayout
                 android:id="@+id/linear2"
@@ -44,11 +48,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView">
 
                 <androidx.cardview.widget.CardView
-                    android:backgroundTint="?attr/colorPrimaryCards"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="7dp"
-                  >
+                    android:backgroundTint="?attr/colorPrimaryCards">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -62,26 +65,26 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Cases"
-                            android:textColor="?attr/colorTxt"/>
+                            android:textColor="?attr/colorTxt" />
 
                         <TextView
-                            android:textSize="15sp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorCases"
                             android:id="@+id/txt_cases"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="__" />
+                            android:text="__"
+                            android:textColor="@color/colorCases"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:backgroundTint="?attr/colorPrimaryCards"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:layout_margin="7dp">
+                    android:layout_margin="7dp"
+                    android:backgroundTint="?attr/colorPrimaryCards">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -91,28 +94,28 @@
                         android:padding="5dp">
 
                         <TextView
-                            android:textColor="?attr/colorTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Recovered" />
+                            android:text="Recovered"
+                            android:textColor="?attr/colorTxt" />
 
                         <TextView
-                            android:textSize="15sp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorRecovered"
                             android:id="@+id/txt_recovered"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="__" />
+                            android:text="__"
+                            android:textColor="@color/colorRecovered"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:backgroundTint="?attr/colorPrimaryCards"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:layout_margin="7dp">
+                    android:layout_margin="7dp"
+                    android:backgroundTint="?attr/colorPrimaryCards">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -122,20 +125,20 @@
                         android:padding="5dp">
 
                         <TextView
-                            android:textColor="?attr/colorTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Deaths" />
+                            android:text="Deaths"
+                            android:textColor="?attr/colorTxt" />
 
                         <TextView
-                            android:textSize="15sp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorDeaths"
                             android:id="@+id/txt_deaths"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="__" />
+                            android:text="__"
+                            android:textColor="@color/colorDeaths"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
 
@@ -155,10 +158,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/linear2">
 
                 <androidx.cardview.widget.CardView
-                    android:backgroundTint="?attr/colorPrimaryCards"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:layout_margin="7dp">
+                    android:layout_margin="7dp"
+                    android:backgroundTint="?attr/colorPrimaryCards">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -168,36 +171,35 @@
                         android:padding="5dp">
 
                         <TextView
-                            android:textColor="?attr/colorTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Today" />
+                            android:text="Today"
+                            android:textColor="?attr/colorTxt" />
 
                         <TextView
-                            android:textColor="?attr/colorTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Deaths" />
+                            android:text="Deaths"
+                            android:textColor="?attr/colorTxt" />
 
                         <TextView
-                            android:textSize="15sp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorDeathsToday"
                             android:id="@+id/txt_today_deaths"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="__" />
+                            android:text="__"
+                            android:textColor="@color/colorDeathsToday"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:backgroundTint="?attr/colorPrimaryCards"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="7dp"
-                    >
+                    android:backgroundTint="?attr/colorPrimaryCards">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -207,34 +209,34 @@
                         android:padding="5dp">
 
                         <TextView
-                            android:textColor="?attr/colorTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Today" />
+                            android:text="Today"
+                            android:textColor="?attr/colorTxt" />
 
                         <TextView
-                            android:textColor="?attr/colorTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Cases" />
+                            android:text="Cases"
+                            android:textColor="?attr/colorTxt" />
 
                         <TextView
-                            android:textSize="15sp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorCasesToday"
                             android:id="@+id/txt_today_cases"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="__" />
+                            android:text="__"
+                            android:textColor="@color/colorCasesToday"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:backgroundTint="?attr/colorPrimaryCards"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:layout_margin="7dp">
+                    android:layout_margin="7dp"
+                    android:backgroundTint="?attr/colorPrimaryCards">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -244,26 +246,26 @@
                         android:padding="5dp">
 
                         <TextView
-                            android:textColor="?attr/colorTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Critical" />
+                            android:text="Critical"
+                            android:textColor="?attr/colorTxt" />
 
                         <TextView
-                            android:textColor="?attr/colorTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Cases" />
+                            android:text="Cases"
+                            android:textColor="?attr/colorTxt" />
 
                         <TextView
-                            android:textSize="15sp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorCritical"
                             android:id="@+id/txt_critical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="__" />
+                            android:text="__"
+                            android:textColor="@color/colorCritical"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
 
@@ -273,11 +275,12 @@
             </LinearLayout>
 
             <androidx.cardview.widget.CardView
-                android:backgroundTint="?attr/colorPrimaryCards"
                 android:id="@+id/cardView6"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_margin="25dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="?attr/colorPrimaryCards"
 
                 app:layout_constraintTop_toBottomOf="@+id/linear1"
                 tools:layout_editor_absoluteX="34dp">
@@ -290,24 +293,25 @@
                     android:padding="5dp">
 
                     <TextView
-                        android:textColor="?attr/colorTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Active" />
+                        android:text="Active"
+                        android:textColor="?attr/colorTxt" />
 
                     <TextView
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorActive"
                         android:id="@+id/txt_active"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="__" />
+                        android:text="__"
+                        android:textColor="@color/colorActive"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
 
             </androidx.cardview.widget.CardView>
+
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/nav_view"
@@ -315,12 +319,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:background="?android:attr/windowBackground"
-                app:itemIconTint="?attr/colorTxt"
-                app:itemTextAppearanceActive="@color/colorPrimary"
-                app:itemTextColor="?attr/colorTxt"
                 app:backgroundTint="?attr/colorPrimaryDark"
                 app:elevation="0dp"
+                app:itemIconTint="?attr/colorTxt"
                 app:itemRippleColor="?attr/colorPrimary"
+                app:itemTextAppearanceActive="@color/colorPrimary"
+                app:itemTextColor="?attr/colorTxt"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -328,8 +332,10 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.0"
                 app:menu="@menu/bottom_nav_menu" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
