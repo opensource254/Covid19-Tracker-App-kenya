@@ -28,7 +28,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         //hiding status bar
         View decorView = getWindow().getDecorView();
-       // Hide the status bar and bottom navbar
+        // Hide the status bar and bottom navbar
         int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                 | View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
@@ -37,7 +37,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         //set status to transparent
         Window window = getWindow();
-        window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
         //setting up a splash screen
         new Handler().postDelayed(new Runnable() {
@@ -50,7 +50,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 finish();
 
             }
-        },time_loading  );
+        }, time_loading);
 
 
     }
