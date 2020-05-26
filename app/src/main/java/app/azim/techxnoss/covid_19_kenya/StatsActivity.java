@@ -80,6 +80,7 @@ public class StatsActivity extends AppCompatActivity {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
     }
+
     //handling bottom navigation
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = item -> {
@@ -183,9 +184,7 @@ public class StatsActivity extends AppCompatActivity {
                     final String jsonString = new String(response.data,
                             HttpHeaderParser.parseCharset(response.headers));
                     return Response.success(new JSONObject(jsonString), cacheEntry);
-                } catch (UnsupportedEncodingException e) {
-                    return Response.error(new ParseError(e));
-                } catch (JSONException e) {
+                } catch (UnsupportedEncodingException | JSONException e) {
                     return Response.error(new ParseError(e));
                 }
             }
