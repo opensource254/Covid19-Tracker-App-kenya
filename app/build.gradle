@@ -55,7 +55,7 @@ dependencies {
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 
     //firebase SDK
-    implementation 'com.google.firebase:firebase-core:17.3.0'
+    implementation 'com.google.firebase:firebase-core:17.5.1'
 
     // Add the Firebase SDK for Crashlytics.
     implementation 'com.google.firebase:firebase-crashlytics:17.0.0-beta03'
